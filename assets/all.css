@@ -1,0 +1,248 @@
+/* Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+
+/* -----------------FIM---------------- */
+
+/* --CLASSE PRINCIPAL ---- */
+
+.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------FIM ------*/
+
+
+
+/* sidebar */
+
+sidebar{
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #a71111;
+    
+}
+
+sidebar .sidebar-title img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+ }
+ 
+ sidebar .sidebar-title h2{
+    font-size: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+ }
+
+ sidebar .sidebar-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border: 1px solid rgba(0,0,0,.0625);
+    color: white;
+    border-right: 0px;
+
+    
+}
+
+.flex-dashboard i{
+   color: rgb(24, 15, 73);
+   margin-right: 5px;
+}
+
+.flex-dashboard .fa-bars{
+    font-size: 22px;
+    cursor: pointer;
+    color:rgb(106, 105, 109);
+}
+
+/*ul e li */
+
+.menu{
+    border-right: 1px solid rgba(0,0,0,.0625);
+    
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #d7dddd ;
+    cursor: pointer;
+}
+
+.menu ul li a:hover{
+    color: #bebaba;
+}
+.menu ul li{
+    border: 1px solid rgba(0,0,0,.0625);
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+
+.menu ul li:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    background-color: rgb(179, 9, 9);
+}
+
+
+.menu ul li i{
+    color:#d5d8e2;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+/*--------------------------------FIM---------------------------------- */
+
+
+
+/*-----------HEADER DENTRO DA DIV MAIN ------------------ */
+
+.flex-dashboard header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid rgba(0,0,0,.0625);
+}
+
+.flex-dashboard header a{
+    text-decoration: none;
+    color: #727777;
+    cursor: pointer;
+}
+
+
+/* -----------FIM------------------ */
+
+
+
+
+/* --- DIV MAIN CONTEUDO CENTRAL -----*/
+
+main{
+    display: block;
+    height: 100%;
+    background-color: rgb(232, 231, 235);
+    width: 100%;
+}
+
+main .main-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    border:1px solid rgba(0,0,0,.0625);
+    height: calc(100% - 90px);
+    overflow-y: auto;
+}
+
+.main-content .btn-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc ;
+    margin: 10px 0;
+    width: 40%;
+}
+
+.panel-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.panel-row button{
+    height: 50px;
+    background: linear-gradient( #f4f4f7, #8d9292);
+    font-size: 18px;
+}
+
+.panel-row button:hover{
+    transform: scale(1.05);
+    transition: 0.3;
+}
+
+.painel-acoes{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.0625);
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.2);
+    display: grid;
+    grid-row: auto;
+}
+.painel-acoes i{
+    color: white;
+}
+
+
+
+
+/* responsividade */
+
+    @media screen and (max-width: 750px) {
+
+        sidebar{
+            display: block;
+            height: 100%;
+            width: 280px;
+            background-color: rgb(19, 12, 59);
+            z-index: 1;
+            position: absolute;
+
+        }
+        
+          .flex-dashboard .fa-bars{
+                font-size: 22px;
+                cursor: pointer;
+                z-index: 1;
+                color: rgb(106, 105, 109);
+                
+               
+            } 
+        
+
+  
+    
+  
+    
+}
